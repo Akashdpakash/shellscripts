@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build pipeline
 
 # Controls when the workflow will run
 on:
@@ -37,13 +37,3 @@ jobs:
       - name: run hello script
         run: |
           bash hello.sh
-
-      - name: build
-        run: |
-          docker build . -t akashdp07/hello-docker-hub:latest
-                  
-      - name: publish
-        run: |
-          docker login  -u akashdp07 -p  ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker push akashdp07/hello-docker-hub:latest
-          
