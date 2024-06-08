@@ -44,6 +44,6 @@ jobs:
                   
       - name: publish
         run: |
-          docker login  -u akashdp07 -p  ${{ secretes.DOCKER_HUB_TOKEN }}
+          docker login  -u akashdp07 -p  ${{ secrets.DOCKER_HUB_TOKEN }}
           docker push akashdp07/hello-docker-hub:latest
           
