@@ -35,7 +35,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: run hello script
-        shell: bash-wrapper {0}
         run: |
           bash hello.sh
           
