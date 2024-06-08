@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add -no-cache python3 g++ make 
+RUN apk add -no-cache bash 
 
 WORKDIR /shellscripts
 
