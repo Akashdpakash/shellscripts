@@ -3,7 +3,7 @@
 # Variables
 RESOURCE_GROUP="myResourceGroup"
 CLUSTER_NAME="myAKSCluster"
-NODE_COUNT=4
+NODE_COUNT=2
 NODE_SIZE="Standard_B2s"
 
 # Create a resource group
