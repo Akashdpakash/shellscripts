@@ -47,3 +47,6 @@ jobs:
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Upload a Build Artifact
+          uses: actions/upload-artifact@v4.3.4
